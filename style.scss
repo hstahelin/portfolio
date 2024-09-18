@@ -138,3 +138,96 @@ $desktop-breakpoint: 1280px;
     }
   }
 }
+
+// PROJECTS
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  &__home {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__icon {
+    width: 24px;
+  }
+}
+
+.projects {
+  background-color: rgb(245, 245, 245);
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 0.2rem;
+}
+
+.project-cards {
+  // border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  &__text {
+    // border: 1px solid red;
+    padding: 0 3rem;
+    line-height: 1.4rem;
+  }
+  &__image {
+    width: 50svw;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(112, 112, 112);
+    &:hover {
+      box-shadow: 0.3rem 0.3rem 0.7rem rgb(112, 112, 112);
+    }
+  }
+  &__divider {
+    width: 70%;
+    margin: auto;
+  }
+  &__icon {
+    width: 32px;
+  }
+  &__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+@include desktop {
+  .projects {
+    height: 90vh;
+    justify-content: flex-start;
+  }
+  .project-cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    &__image {
+      width: 45%;
+    }
+    &__divider {
+      display: none;
+    }
+  }
+}
