@@ -122,6 +122,7 @@
 .nav {
   position: sticky;
   top: 0;
+  z-index: 1000;
   background-color: #000000;
   color: #ffffff;
   padding: 1rem;
@@ -482,22 +483,19 @@
   margin-top: 1.2rem;
   display: grid;
   gap: 0.9rem;
+  position: relative;
+  z-index: 1;
 }
 
-.blog-post-editorial__thumbs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-}
-
-.blog-post-editorial__thumbs img,
+.blog-post-editorial__secondary,
 .blog-post-editorial__hero {
   width: 100%;
+  display: block;
   object-fit: cover;
   filter: grayscale(12%);
 }
 
-.blog-post-editorial__thumbs img {
+.blog-post-editorial__secondary {
   aspect-ratio: 4 / 5;
 }
 
@@ -549,7 +547,7 @@
   }
 
   .blog-editorial__hero-grid {
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.3rem;
     align-items: start;
   }
