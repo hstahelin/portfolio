@@ -482,6 +482,7 @@
   margin-top: 1.2rem;
   display: grid;
   gap: 0.9rem;
+  min-height: 280px;
 }
 
 .blog-post-editorial__thumbs {
@@ -493,8 +494,10 @@
 .blog-post-editorial__thumbs img,
 .blog-post-editorial__hero {
   width: 100%;
+  display: block;
   object-fit: cover;
   filter: grayscale(12%);
+  background: #d9d9d4;
 }
 
 .blog-post-editorial__thumbs img {
