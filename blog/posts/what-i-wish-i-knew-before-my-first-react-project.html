@@ -21,77 +21,95 @@
       </a>
     </header>
 
-    <main class="blog-post">
-      <article class="blog-post__container">
-        <a class="blog-post__back" href="../../blog.html">← Back to Blog</a>
+    <main class="blog-post-editorial">
+      <article class="blog-post-editorial__frame">
+        <a class="blog-post-editorial__back" href="../../blog.html">← Back to Blog</a>
 
-        <header class="blog-post__header">
-          <p class="blog-post__eyebrow">React • Dev Journey</p>
-          <h1 class="blog-post__title">What I Wish I Knew Before My First React Project</h1>
-          <p class="blog-post__meta">Published: March 9, 2026 · Reading time: 5–6 min</p>
+        <header class="blog-post-editorial__header">
+          <p class="blog-post-editorial__kicker">React · Dev Journey</p>
+          <h1>What I Wish I Knew Before My First React Project</h1>
+          <p class="blog-post-editorial__meta">Published: March 9, 2026 · Reading time: 5–6 min</p>
         </header>
 
-        <p>
-          My first React project was my bootcamp capstone: a support desk app with
-          ticket creation and editing, a knowledge base, user management, and notifications.
-          It sounded like “build a website.” It felt like building a living system. I didn’t
-          realize then that React wasn’t the whole app — it was only the view. The rest of
-          the stack mattered just as much.
-        </p>
+        <section class="blog-post-editorial__media">
+          <div class="blog-post-editorial__thumbs" aria-hidden="true">
+            <img src="../../assets/blog/editorial-1.jpg" alt="" />
+            <img src="../../assets/blog/editorial-2.jpg" alt="" />
+            <img src="../../assets/blog/editorial-3.jpg" alt="" />
+            <img src="../../assets/blog/editorial-4.jpg" alt="" />
+          </div>
+          <img
+            class="blog-post-editorial__hero"
+            src="../../assets/blog/editorial-hero.jpg"
+            alt="Developer workspace with laptop and notebook"
+          />
+        </section>
 
-        <p>
-          The first thing that surprised me was JSX. I expected HTML with a bit of JavaScript
-          sprinkled in. What I got instead was JavaScript that happened to look like HTML.
-          Once that clicked, my mental model changed. JSX wasn’t a markup language — it was a
-          language for composing logic and UI at the same time. That shift took longer than I expected.
-        </p>
+        <section class="blog-post-editorial__content">
+          <p>
+            My first React project was my bootcamp capstone: a support desk app with ticket creation
+            and editing, a knowledge base, user management, and notifications. It sounded like
+            “build a website.” It felt like building a living system. I didn’t realize then that
+            React wasn’t the whole app — it was only the view. The rest of the stack mattered just as much.
+          </p>
 
-        <p>
-          The second misconception was bigger: I thought React <em>was</em> the app. In reality,
-          React was just the front door. The real complexity lived in the data flow. I was stitching
-          together Express sessions, Passport auth, MySQL persistence, sessionStorage for login state,
-          and then a React UI on top. The UI felt easy compared to making everything work together.
-        </p>
+          <p>
+            The first thing that surprised me was JSX. I expected HTML with a bit of JavaScript sprinkled in.
+            What I got instead was JavaScript that happened to look like HTML. Once that clicked, my mental model
+            changed. JSX wasn’t a markup language — it was a language for composing logic and UI at the same time.
+            That shift took longer than I expected.
+          </p>
 
-        <p>
-          The biggest mistake I made had nothing to do with data or architecture — it was CSS.
-          I spent way too much time polishing the UI before the underlying logic was stable.
-          It looked nice, but it slowed everything down. If I could go back, I’d ship ugly,
-          make it work, then make it pretty.
-        </p>
+          <p>
+            The second misconception was bigger: I thought React <em>was</em> the app. In reality, React was just
+            the front door. The real complexity lived in the data flow. I was stitching together Express sessions,
+            Passport auth, MySQL persistence, sessionStorage for login state, and then a React UI on top.
+            The UI felt easy compared to making everything work together.
+          </p>
 
-        <p>
-          Where things finally clicked was when I leaned into reusable components. Once I started
-          thinking “components are just functions, props are inputs,” the project got easier to reason about.
-          That was my real “aha” moment — not a fancy pattern, just a clearer mental model.
-        </p>
+          <p>
+            The biggest mistake I made had nothing to do with data or architecture — it was CSS. I spent way too
+            much time polishing the UI before the underlying logic was stable. It looked nice, but it slowed
+            everything down. If I could go back, I’d ship ugly, make it work, then make it pretty.
+          </p>
 
-        <p>
-          State management was another lesson. At the time, I kept it lightweight: local state,
-          a small context, sessionStorage for login state, and Express sessions persisted in MySQL.
-          It worked. If I rebuilt the same project now, I’d still keep it simple, but I’d reach for
-          TanStack Query for server state and Zustand for small UI state. It’s not about chasing shiny tools —
-          it’s about matching the tool to the type of state you’re managing.
-        </p>
+          <p>
+            Where things finally clicked was when I leaned into reusable components. Once I started thinking
+            “components are just functions, props are inputs,” the project got easier to reason about.
+            That was my real “aha” moment — not a fancy pattern, just a clearer mental model.
+          </p>
 
-        <p>
-          The debugging habit that saved me was React DevTools in Chrome. Being able to inspect props
-          and state in real time made bugs visible instead of mysterious.
-        </p>
+          <p>
+            State management was another lesson. At the time, I kept it lightweight: local state, a small context,
+            sessionStorage for login state, and Express sessions persisted in MySQL. It worked. If I rebuilt the
+            same project now, I’d still keep it simple, but I’d reach for TanStack Query for server state and
+            Zustand for small UI state. It’s not about chasing shiny tools — it’s about matching the tool to the
+            type of state you’re managing.
+          </p>
 
-        <p>
-          If I could talk to my past self before starting, I’d say three things: ship ugly,
-          build small components early, and don’t be afraid to break big ideas into tiny pieces.
-          React rewards that mindset.
-        </p>
+          <p>
+            The debugging habit that saved me was React DevTools in Chrome. Being able to inspect props and state
+            in real time made bugs visible instead of mysterious.
+          </p>
 
-        <h2>References</h2>
-        <ul>
-          <li><a href="https://react.dev">React documentation</a></li>
-          <li><a href="https://tanstack.com/query/latest">TanStack Query documentation</a></li>
-          <li><a href="https://zustand.docs.pmnd.rs">Zustand documentation</a></li>
-          <li><a href="https://react.dev/learn/react-developer-tools">React DevTools overview</a></li>
-        </ul>
+          <p>
+            If I could talk to my past self before starting, I’d say three things: ship ugly, build small
+            components early, and don’t be afraid to break big ideas into tiny pieces. React rewards that mindset.
+          </p>
+        </section>
+
+        <section class="blog-post-editorial__references">
+          <h2>References</h2>
+          <ul>
+            <li><a href="https://react.dev">React documentation</a></li>
+            <li><a href="https://tanstack.com/query/latest">TanStack Query documentation</a></li>
+            <li><a href="https://zustand.docs.pmnd.rs">Zustand documentation</a></li>
+            <li><a href="https://react.dev/learn/react-developer-tools">React DevTools overview</a></li>
+          </ul>
+          <p class="blog-post-editorial__credits">
+            Images: Lorem Picsum (free placeholder photography) · https://picsum.photos
+          </p>
+        </section>
       </article>
     </main>
   </body>
