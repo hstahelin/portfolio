@@ -22,19 +22,26 @@
     </header>
     <main class="projects">
       <h1 class="projects__title">Blog</h1>
-      <article class="project-card">
-        <h2>What I Wish I Knew Before My First React Project</h2>
-        <p class="about__content">
-          A candid look at my first React project—misconceptions, time sinks,
-          and practical lessons I wish I knew before starting.
-        </p>
-        <p><strong>Published:</strong> March 9, 2026 · <strong>Reading time:</strong> 5–6 min</p>
-        <p>
-          <a href="./blog/posts/what-i-wish-i-knew-before-my-first-react-project.html"
-            >Read the post</a
+
+      <section class="blog-list" aria-label="Blog entries">
+        <article class="blog-entry">
+          <div class="blog-entry__meta">
+            <span>March 9, 2026</span>
+            <span aria-hidden="true">•</span>
+            <span>5–6 min read</span>
+          </div>
+          <h2 class="blog-entry__title">What I Wish I Knew Before My First React Project</h2>
+          <p class="blog-entry__excerpt">
+            A candid story about my first React build—what I misunderstood,
+            where I lost time, and the practical lessons I’d pass to beginners.
+          </p>
+          <a
+            class="blog-entry__link"
+            href="./blog/posts/what-i-wish-i-knew-before-my-first-react-project.html"
+            >Read article</a
           >
-        </p>
-      </article>
+        </article>
+      </section>
     </main>
   </body>
 </html>
