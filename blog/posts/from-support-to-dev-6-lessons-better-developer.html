@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/profile-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>From Support to Dev: 6 Lessons That Made Me a Better Developer - Hugo Stahelin</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="../../index.html" class="nav__home">
+        <img src="../../assets/round.png" alt="Home" class="nav__icon" />
+        Hugo Stahelin
+      </a>
+    </header>
+
+    <main class="blog-post-editorial">
+      <article class="blog-post-editorial__frame">
+        <a class="blog-post-editorial__back" href="../../blog.html">← Back to Blog</a>
+
+        <header class="blog-post-editorial__header">
+          <p class="blog-post-editorial__kicker">Career · Developer Mindset</p>
+          <h1>From Support to Dev: 6 Lessons That Made Me a Better Developer</h1>
+          <p class="blog-post-editorial__meta">Published: March 20, 2026 · Reading time: 5–6 min</p>
+        </header>
+
+        <section class="blog-post-editorial__media">
+          <img class="blog-post-editorial__secondary" src="/assets/blog/editorial-1.jpg" alt="Developer desk setup" />
+          <img class="blog-post-editorial__hero" src="/assets/blog/editorial-3.jpg" alt="Workspace and notebook" />
+        </section>
+
+        <section class="blog-post-editorial__content">
+          <p>When I moved from support into development, I expected to start from zero. New tools, new workflows, new language. But something unexpected happened: a lot of my support habits turned out to be advantages.</p>
+          <p>I used to think support and development were separate worlds. Now I see them as two sides of the same system. In support, you live close to users, pain points, and production reality. In development, you build the thing that creates (or solves) those pain points. The bridge between both is stronger than most people think.</p>
+
+          <h2>1) Ask better questions and clarify requirements before coding</h2>
+          <p>In support, jumping into fix mode too early can make things worse. The same is true in dev. One of the most useful habits I brought with me is asking many questions before writing code. What exactly is broken? Who is affected? Under what conditions? What does “done” actually mean?</p>
+          <p>This is how I avoid one common developer mistake: building before clarifying requirements. Ambiguity in a ticket becomes ambiguity in code.</p>
+
+          <h2>2) Always think from the user’s side</h2>
+          <p>Support trained me to see problems through user context, not just system logic. A feature can be technically correct and still fail the user experience. When I build now, I ask: would this be clear to someone using it for the first time? Would this be frustrating under pressure?</p>
+
+          <h2>3) Edge cases are not edge cases for long</h2>
+          <p>In support, you see weird scenarios constantly. In development, that experience helps you expect failure modes earlier. I now check edge cases by default: empty states, invalid inputs, timing issues, and confusing flows. It saves time later and reduces support burden before release.</p>
+
+          <h2>4) Details matter more than we admit</h2>
+          <p>Support makes you respect details because details create tickets. A vague message, a missing label, one unclear step — that’s enough to trigger confusion. As a developer, I now treat wording, behavior, and clarity as part of quality, not polish.</p>
+
+          <h2>5) Better error messages are a product feature</h2>
+          <p>Another mistake I now catch earlier is generic user-facing errors. “Something went wrong” might be technically accurate, but it’s useless to a real user. Support taught me that clear messages reduce frustration and reduce follow-up load. Good errors are not extra — they’re part of the experience.</p>
+          <p>A concrete example: instead of showing <strong>“Login failed.”</strong>, I’d rather show <strong>“We couldn’t sign you in with those credentials. Check your email/password and try again, or reset your password.”</strong></p>
+          <p>Even better, if relevant: <strong>“Too many attempts. Try again in 10 minutes.”</strong> That kind of message answers the user’s next question immediately.</p>
+
+          <h2>6) Urgent and important are not the same</h2>
+          <p>Support also sharpened my prioritization. Not every loud issue is the highest-value issue. I learned to separate urgency from importance: what is burning right now vs what will prevent repeated fires. That helps me make better tradeoffs in development work.</p>
+          <p>The biggest change for me is that communication is now part of engineering, not separate from it. Asking better questions, framing clear outcomes, and writing for users are all technical skills in practice.</p>
+
+          <h2>Before I code, I ask…</h2>
+          <ul>
+            <li>What problem are we solving, exactly?</li>
+            <li>Who is affected, and how urgent is it?</li>
+            <li>What does success look like for the user?</li>
+            <li>What are the obvious edge cases?</li>
+            <li>What should the error message say if this fails?</li>
+            <li>Are we fixing the root cause, or just the symptom?</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
