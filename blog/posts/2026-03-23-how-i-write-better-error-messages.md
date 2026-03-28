@@ -19,7 +19,7 @@ keywords:
 
 # How I Write Better Error Messages as a Developer with Support Experience
 
-If I had to pick one sentence I never want to ship again, it’s this: **“Something went wrong.”**
+If I had to pick one sentence I never want to ship again, it’s this: **“Something went wrong.”** (without any useful context).
 
 I’ve seen that line from both sides — as someone in support receiving frustrated tickets, and now as someone building products. The problem with vague errors isn’t just bad UX. It creates extra support load, slows down debugging, and leaves users stuck with no idea what to do next.
 
