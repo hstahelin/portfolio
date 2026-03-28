@@ -82,6 +82,16 @@ I still need technical detail for debugging — but I don’t force all users to
 
 That keeps the main experience clean while still helping teams diagnose issues fast.
 
+## Quick checklist I now use before shipping
+
+Before I merge a feature, I do a fast error-copy pass:
+
+- Does the message explain what failed in plain language?
+- Does it suggest the next action (retry, fix input, contact someone)?
+- Is the guidance specific enough that support won’t need a follow-up question?
+
+This takes a few minutes, but it saves hours later.
+
 ## If you still ship “Something went wrong…”
 
 Try this test: imagine you are the user seeing your error with no extra context. What would you do next?
