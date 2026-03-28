@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/profile-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <title>How I Write Better Error Messages as a Developer with Support Experience - Hugo Stahelin</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="../../index.html" class="nav__home">
+        <img src="../../assets/round.png" alt="Home" class="nav__icon" />
+        Hugo Stahelin
+      </a>
+    </header>
+
+    <main class="blog-post-editorial">
+      <article class="blog-post-editorial__frame">
+        <a class="blog-post-editorial__back" href="../../blog.html">← Back to Blog</a>
+        <header class="blog-post-editorial__header">
+          <p class="blog-post-editorial__kicker">UX Writing · Dev Experience</p>
+          <h1>How I Write Better Error Messages as a Developer with Support Experience</h1>
+          <p class="blog-post-editorial__meta">Published: March 23, 2026 · Reading time: 5–6 min</p>
+        </header>
+        <section class="blog-post-editorial__content">
+          <p>If I had to pick one sentence I never want to ship again, it’s this: <strong>“Something went wrong.”</strong></p>
+          <p>I’ve seen that line from both sides — as someone in support receiving frustrated tickets, and now as someone building products. The problem with vague errors isn’t just bad UX. It creates extra support load, slows down debugging, and leaves users stuck with no idea what to do next.</p>
+          <h2>Why vague errors are expensive</h2>
+          <p>In support, unclear errors created avoidable tickets all the time. People didn’t open tickets because they wanted to. They opened tickets because the product gave them no path forward.</p>
+          <h2>My default rule: every error must give next steps</h2>
+          <p>A good error message should help the user recover, not just report failure. My baseline is simple: if someone sees this error, can they do something useful in the next 10 seconds?</p>
+          <h2>Two real patterns where wording matters</h2>
+          <p><strong>Before:</strong> “Access denied.”<br/><strong>After:</strong> “You need Admin access to edit billing settings. Contact your workspace owner.”</p>
+          <p><strong>Before:</strong> “Invalid request.”<br/><strong>After:</strong> “Phone number must include country code (e.g., +1).”</p>
+          <h2>The 3 things every error message should include</h2>
+          <ol>
+            <li>A clear next step</li>
+            <li>Retry/contact guidance</li>
+            <li>Specific location or cause when relevant</li>
+          </ol>
+          <h2>If you still ship “Something went wrong…”</h2>
+          <p>Try this test: imagine you are the user seeing your error with no extra context. What would you do next?</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
