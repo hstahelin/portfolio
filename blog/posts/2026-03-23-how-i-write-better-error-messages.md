@@ -15,11 +15,17 @@ keywords:
   - actionable error messages
   - validation error copy
   - permission error UX
+image_references:
+  secondary: "https://commons.wikimedia.org/wiki/Special:FilePath/Interface-design-example.jpg"
+  hero: "https://commons.wikimedia.org/wiki/Special:FilePath/Usability%20testing%20with%20eye%20tracking.jpg"
+references:
+  - "Nielsen Norman Group: Error Message Guidelines"
+  - "WCAG guidance on helping users avoid and correct mistakes"
 ---
 
 # How I Write Better Error Messages as a Developer with Support Experience
 
-If I had to pick one sentence I never want to ship again, it’s this: **“Something went wrong.”** (without any useful context).
+If I had to pick one sentence I never want to ship again, it’s this: **“Something went wrong.”**
 
 I’ve seen that line from both sides — as someone in support receiving frustrated tickets, and now as someone building products. The problem with vague errors isn’t just bad UX. It creates extra support load, slows down debugging, and leaves users stuck with no idea what to do next.
 
@@ -47,7 +53,7 @@ I prefer direct and neutral tone: clear, specific, no fluff, no blame.
 
 ### 1) Permission errors
 
-**Before:** “Access denied.”
+**Before:** “Access denied.”  
 **After:** “You need Admin access to edit billing settings. Contact your workspace owner.”
 
 This small rewrite changes everything. It tells users:
@@ -58,7 +64,7 @@ This small rewrite changes everything. It tells users:
 
 ### 2) Validation errors
 
-**Before:** “Invalid request.”
+**Before:** “Invalid request.”  
 **After:** “Phone number must include country code (e.g., +1).”
 
 This is the difference between guessing and fixing. The best validation errors point to the exact field and expected format.
@@ -81,16 +87,6 @@ I still need technical detail for debugging — but I don’t force all users to
 - optionally expose deeper details/context for troubleshooting
 
 That keeps the main experience clean while still helping teams diagnose issues fast.
-
-## Quick checklist I now use before shipping
-
-Before I merge a feature, I do a fast error-copy pass:
-
-- Does the message explain what failed in plain language?
-- Does it suggest the next action (retry, fix input, contact someone)?
-- Is the guidance specific enough that support won’t need a follow-up question?
-
-This takes a few minutes, but it saves hours later.
 
 ## If you still ship “Something went wrong…”
 

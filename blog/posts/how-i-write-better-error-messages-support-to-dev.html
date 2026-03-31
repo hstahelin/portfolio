@@ -26,34 +26,120 @@
           <h1>How I Write Better Error Messages as a Developer with Support Experience</h1>
           <p class="blog-post-editorial__meta">Published: March 23, 2026 · Reading time: 5–6 min</p>
         </header>
+
+        <section class="blog-post-editorial__media">
+          <img
+            class="blog-post-editorial__secondary"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Interface-design-example.jpg"
+            alt="Interface design and UX planning visual"
+          />
+          <img
+            class="blog-post-editorial__hero"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Usability%20testing%20with%20eye%20tracking.jpg"
+            alt="Usability testing setup representing user experience and interface clarity"
+          />
+        </section>
+
         <section class="blog-post-editorial__content">
-          <p>If I had to pick one sentence I never want to ship again, it’s this: <strong>“Something went wrong.”</strong> (without any useful context).</p>
-          <p>I’ve seen that line from both sides — as someone in support receiving frustrated tickets, and now as someone building products. The problem with vague errors isn’t just bad UX. It creates extra support load, slows down debugging, and leaves users stuck with no idea what to do next.</p>
+          <p>If I had to pick one sentence I never want to ship again, it’s this: <strong>“Something went wrong.”</strong></p>
+
+          <p>
+            I’ve seen that line from both sides — as someone in support receiving frustrated tickets, and now as someone building
+            products. The problem with vague errors isn’t just bad UX. It creates extra support load, slows down debugging, and
+            leaves users stuck with no idea what to do next.
+          </p>
+
+          <p>
+            My support background changed how I write errors. I don’t treat error copy as a minor detail anymore. I treat it as
+            part of the product.
+          </p>
+
           <h2>Why vague errors are expensive</h2>
-          <p>In support, unclear errors created avoidable tickets all the time. People didn’t open tickets because they wanted to. They opened tickets because the product gave them no path forward.</p>
-          <h2>My default rule: every error must give next steps</h2>
-          <p>A good error message should help the user recover, not just report failure. My baseline is simple: if someone sees this error, can they do something useful in the next 10 seconds?</p>
-          <h2>Two real patterns where wording matters</h2>
-          <p><strong>Before:</strong> “Access denied.”<br/><strong>After:</strong> “You need Admin access to edit billing settings. Contact your workspace owner.”</p>
-          <p><strong>Before:</strong> “Invalid request.”<br/><strong>After:</strong> “Phone number must include country code (e.g., +1).”</p>
-          <h2>The 3 things every error message should include</h2>
-          <ol>
-            <li>A clear next step</li>
-            <li>Retry/contact guidance</li>
-            <li>Specific location or cause when relevant</li>
-          </ol>
-          <h2>Quick checklist I now use before shipping</h2>
-          <p>Before I merge a feature, I do a fast error-copy pass:</p>
+
+          <p>
+            In support, unclear errors created avoidable tickets all the time. People didn’t open tickets because they wanted to.
+            They opened tickets because the product gave them no path forward.
+          </p>
+
+          <p>“Something went wrong” sounds harmless, but it pushes all the work onto the user:</p>
+
           <ul>
-            <li>Does the message explain what failed in plain language?</li>
-            <li>Does it suggest the next action (retry, fix input, contact someone)?</li>
-            <li>Is the guidance specific enough that support won’t need a follow-up question?</li>
+            <li>They don’t know what failed</li>
+            <li>They don’t know if they can retry</li>
+            <li>They don’t know what to change</li>
           </ul>
-          <p>This takes a few minutes, but it saves hours later.</p>
+
+          <p>That confusion eventually lands in support, then in engineering, and everyone loses time.</p>
+
+          <h2>My default rule: every error must give next steps</h2>
+
+          <p>
+            A good error message should help the user recover, not just report failure. My baseline is simple: if someone sees
+            this error, can they do something useful in the next 10 seconds?
+          </p>
+
+          <p>I prefer direct and neutral tone: clear, specific, no fluff, no blame.</p>
+
+          <h2>Two real patterns where wording matters</h2>
+
+          <h3>1) Permission errors</h3>
+          <p><strong>Before:</strong> “Access denied.”<br /><strong>After:</strong> “You need Admin access to edit billing settings. Contact your workspace owner.”</p>
+
+          <p>This small rewrite changes everything. It tells users:</p>
+          <ul>
+            <li>what they were trying to do</li>
+            <li>why it failed</li>
+            <li>exactly what to do next</li>
+          </ul>
+
+          <h3>2) Validation errors</h3>
+          <p><strong>Before:</strong> “Invalid request.”<br /><strong>After:</strong> “Phone number must include country code (e.g., +1).”</p>
+
+          <p>This is the difference between guessing and fixing. The best validation errors point to the exact field and expected format.</p>
+
+          <h2>The 3 things every error message should include</h2>
+
+          <p>From my support-to-dev experience, every user-facing error should include:</p>
+          <ol>
+            <li><strong>A clear next step</strong></li>
+            <li><strong>Retry/contact guidance</strong></li>
+            <li><strong>Specific location or cause when relevant</strong></li>
+          </ol>
+
+          <p>When you include these three, support tickets drop and trust improves.</p>
+
+          <h2>Clarity for users beats developer convenience</h2>
+
+          <p>
+            I still need technical detail for debugging — but I don’t force all users to read technical internals. My approach is:
+          </p>
+          <ul>
+            <li>keep primary error copy user-friendly</li>
+            <li>optionally expose deeper details/context for troubleshooting</li>
+          </ul>
+
+          <p>That keeps the main experience clean while still helping teams diagnose issues fast.</p>
+
           <h2>If you still ship “Something went wrong…”</h2>
+
           <p>Try this test: imagine you are the user seeing your error with no extra context. What would you do next?</p>
+
           <p>If the honest answer is “I don’t know,” the message needs rewriting.</p>
-          <p>Error messages are not edge polish. They are part of the core product experience. And in many cases, they’re the difference between a user completing a task or opening a support ticket.</p>
+
+          <p>
+            Error messages are not edge polish. They are part of the core product experience. And in many cases, they’re the
+            difference between a user completing a task or opening a support ticket.
+          </p>
+        </section>
+
+        <section class="blog-post-editorial__references">
+          <h2>References</h2>
+          <ul>
+            <li><a href="https://www.nngroup.com/articles/error-message-guidelines/">Nielsen Norman Group: Error Message Guidelines</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification">WCAG 2.2: Error Identification</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Interface-design-example.jpg">Interface design image source</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Usability_testing_with_eye_tracking.jpg">Usability testing image source</a></li>
+          </ul>
         </section>
       </article>
     </main>
