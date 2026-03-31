@@ -16,8 +16,8 @@ keywords:
   - validation error copy
   - permission error UX
 image_references:
-  secondary: "https://commons.wikimedia.org/wiki/Special:FilePath/Interface-design-example.jpg"
-  hero: "https://commons.wikimedia.org/wiki/Special:FilePath/Usability%20testing%20with%20eye%20tracking.jpg"
+  secondary: "/assets/blog/error-messages-secondary.jpg"
+  hero: "/assets/blog/error-messages-hero.jpg"
 references:
   - "Nielsen Norman Group: Error Message Guidelines"
   - "WCAG guidance on helping users avoid and correct mistakes"
